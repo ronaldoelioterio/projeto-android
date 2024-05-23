@@ -160,6 +160,10 @@ aside {
     background-color: #bacadd;
 }
 
+aside p {
+    color: #000;
+}
+
 aside h3::before {
     content: '🛎️ ';
 }
