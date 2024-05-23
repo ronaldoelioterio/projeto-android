@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'IDroid';
+    src: url('../fontes/IDroid.otf') format('opentype'); font-weight: normal;
+}
+
+@font-face {
+    font-family: 'basketball';
+    src: url('../fontes/Basketball.otf') format('opentype');
+}
+
+:root {
+    --cor01: #0B1426;
+    --cor02: #1E2D40;
+    --cor03: #747F8C;
+    --cor04: #F2F2F2;
+    --cor05: #201f1f;
+
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font-destaque: 'basketball',sans-serif;
+}
+
+.externo {
+    padding: 2px;
+    background-image: linear-gradient(to right, #9bc2f224, #3a5d87);
+    color: #0b162c;
+    text-decoration: none;
+}
+
+.externo:hover {
+    background-image: linear-gradient(to left, #9bc2f224, #3a5d87);
+}
+
+.externo::after {
+    content: ' 🔗';
+}
+
+body {
+    font-family: var(--font-padrao);
+    margin: 0px;
+    background-color: #747F8C;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px -16px 0px;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+}
+
+header h1 {
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.585);
+    margin: 1px 0px -3px 0px;
+    padding: 10px;
+    font-style: normal;
+    font-size: 3em;
+    font-family: var(--font-destaque);
+    color: white;
+}
+
+header p {
+    width: 440px;
+    margin: 7px auto 25px auto;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.585);
+    padding: 5px;
+    color: white;
+}
+
+nav {
+    padding:15px 13px 15px 18px;
+    margin-top: 0px;
+    background-color: var(--cor02);
+}
+
+nav a {
+    border-radius: 20px;
+    padding: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    transition-duration: 0.6s;
+    background-color: #0e0e3c;
+    border-radius: 5px 20px;
+}
+
+nav a:active {
+    transition-duration: 0s;
+    background-color: #a36c04;
+    border-radius: 5px 20px;
+}
+
+.subtitulo {
+    padding: 5px;
+    font-weight: 300;
+    color: var(--cor01);
+    background-image: linear-gradient(to right, #aebccf, #fff);
+}
+
+main {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    margin: 0px auto 0px auto;
+    min-width: 220px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+}
+
+main h1 {
+    font-family: 'IDroid';
+}
+
+main h2 {
+    font-family: 'IDroid';
+}
+
+main img {
+    width: 100%;
+}
+
+.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+div.video {
+    background-image: linear-gradient(to bottom, #556477, #2f4663);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #bacadd;
+}
+
+aside h3::before {
+    content: '🛎️ ';
+}
+
+aside ul {
+    list-style-type: '\00A0\2714\00A0';
+    list-style-position: inside;
+    padding: 10px 70px;
+    columns: 2;
+}
+
+footer {
+    margin-bottom: -8px;
+    text-align: center;
+    background-color: #0b0f16bd;
+}
+
+footer p {
+    font-size: 0.8em;
+    padding: 6px;
+    color: #fff;
+}
+
+footer a {
+    padding: 5px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #020915bd;
+    text-decoration: none;
+}
+
+footer a::after {
+    content: ' 🔗';
+}
+
+footer a:hover {
+    transition-duration: 0.4s;
+    background-color: #0e0e3c;
+}
+
+footer a:active {
+    transition-duration: 0s;
+    background-color: #a36c04;
+}
